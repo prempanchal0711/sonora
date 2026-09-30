@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #111;
+    line-height: 1.6;
+}
+
+/* Navigation */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 7%;
+
+    background-color: #111;
+    color: white;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+#themeButton {
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 7%;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.small-title {
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    max-width: 550px;
+}
+
+.hero-button {
+    display: inline-block;
+
+    margin-top: 25px;
+    padding: 12px 22px;
+
+    background-color: white;
+    color: black;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Common Section */
+
+.featured,
+.latest {
+    padding: 80px 7%;
+}
+
+.section-title p {
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #666;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+
+/* Featured */
+
+.featured-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+}
+
+.featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured-content {
+    padding: 50px;
+}
+
+.category {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #777;
+    font-weight: bold;
+}
+
+.featured-content h3 {
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.featured-content p {
+    color: #555;
+}
+
+.date {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 20px;
+
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Post Cards */
+
+.post-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.post-card {
+    background-color: white;
+}
+
+.post-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: 25px;
+}
+
+.post-content h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.post-content p {
+    color: #555;
+}
+
+.post-content a {
+    display: inline-block;
+    margin-top: 15px;
+
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 50px 7%;
+
+    background-color: #111;
+    color: white;
+
+    text-align: center;
+}
+
+footer h2 {
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .featured-box {
+        grid-template-columns: 1fr;
+    }
+
+    .post-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
