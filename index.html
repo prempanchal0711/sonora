@@ -1,199 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SONORA - Music Blog</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">SONORA</div>
+<header>
+    <div class="nav">
+        <a href="index.html" class="logo"><span>SONORA</span><span class="logo-by">by Prem</span></a>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="artists.html">Artists</a>
+            <a href="genres.html">Genres</a>
+            <a href="about.html">About</a>
+            <button id="themeButton">Dark</button>
+        </div>
+    </div>
+</header>
 
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="#">Artists</a></li>
-                <li><a href="#">Genres</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
+<section class="hero">
+    <p> MUSIC • STORIES • DISCOVERY </p>
+    <h1>Discover music.<br>Find your sound.</h1>
+    <p>Album reviews, artist stories and music recommendations.</p>
+    <a href="reviews.html" class="button">Explore Reviews</a>
+</section>
 
-            <button id="themeButton">Dark Mode</button>
-        </nav>
-    </header>
+<section class="section">
+    <p class="label">FEATURED</p>
+    <h2>The Albums That Stay With You</h2>
 
+    <div class="featured">
+        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80">
 
-    <!-- Hero Section -->
-    <section class="hero">
-
-        <div class="hero-text">
-            <p class="small-title">MUSIC • STORIES • DISCOVERY</p>
-
-            <h1>Discover music.<br>Find your sound.</h1>
-
+        <div>
+            <p class="label">ALBUM REVIEW</p>
+            <h3>Why Some Records Never Really Leave You</h3>
             <p>
-                Reviews, artist stories, genre guides and music
-                recommendations for curious listeners.
+                Some albums become memories, moods and moments
+                that stay with us long after the music ends.
             </p>
+            <a href="reviews.html">Read Article →</a>
+        </div>
+    </div>
+</section>
 
-            <a href="#latest" class="hero-button">Explore Music</a>
+<section class="section">
+    <p class="label">LATEST</p>
+    <h2>What's Playing</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=600&q=80">
+            <h3>The Rise of Bedroom Pop</h3>
+            <p>How home recording changed modern music.</p>
+            <a href="genres.html">Read More →</a>
         </div>
 
-    </section>
-
-
-    <!-- Featured Article -->
-    <section class="featured">
-
-        <div class="section-title">
-            <p>FEATURED</p>
-            <h2>The Albums That Never Get Old</h2>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=600&q=80">
+            <h3>Artists Worth Discovering</h3>
+            <p>A few artists bringing fresh ideas to music.</p>
+            <a href="artists.html">Read More →</a>
         </div>
 
-        <div class="featured-box">
-
-            <div class="featured-image">
-                <img
-                    src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=1000&q=80"
-                    alt="Music setup">
-            </div>
-
-            <div class="featured-content">
-
-                <span class="category">ALBUM REVIEW</span>
-
-                <h3>Why Some Records Stay With Us</h3>
-
-                <p>
-                    Some albums become more than collections of songs.
-                    They become memories, moods and moments that stay
-                    with us for years.
-                </p>
-
-                <p class="date">September 30, 2026</p>
-
-                <a href="#" class="read-more">Read Article →</a>
-
-            </div>
-
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=600&q=80">
+            <h3>5 Albums for a Late Night</h3>
+            <p>Atmospheric albums for quiet nights.</p>
+            <a href="reviews.html">Read More →</a>
         </div>
 
-    </section>
+    </div>
+</section>
 
+<footer>
+    <h2>SONORA</h2>
+    <p class="footer-by">by Prem</p>
+    <p>Discover music. Find your sound.</p>
+</footer>
 
-    <!-- Latest Posts -->
-    <section class="latest" id="latest">
-
-        <div class="section-title">
-            <p>LATEST</p>
-            <h2>Latest Stories</h2>
-        </div>
-
-        <div class="post-grid">
-
-            <article class="post-card">
-
-                <img
-                    src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=80"
-                    alt="Music studio">
-
-                <div class="post-content">
-                    <span class="category">GENRE</span>
-
-                    <h3>The Rise of Bedroom Pop</h3>
-
-                    <p>
-                        How home recording changed the way
-                        artists create and share music.
-                    </p>
-
-                    <a href="#">Read More →</a>
-                </div>
-
-            </article>
-
-
-            <article class="post-card">
-
-                <img
-                    src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=800&q=80"
-                    alt="Live concert">
-
-                <div class="post-content">
-                    <span class="category">ARTISTS</span>
-
-                    <h3>Inside the World of Alternative Music</h3>
-
-                    <p>
-                        Exploring artists who continue to push
-                        the boundaries of modern music.
-                    </p>
-
-                    <a href="#">Read More →</a>
-                </div>
-
-            </article>
-
-
-            <article class="post-card">
-
-                <img
-                    src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80"
-                    alt="Concert lights">
-
-                <div class="post-content">
-                    <span class="category">RECOMMENDATIONS</span>
-
-                    <h3>5 Albums for a Late Night</h3>
-
-                    <p>
-                        A collection of atmospheric records
-                        for quiet nights and long drives.
-                    </p>
-
-                    <a href="#">Read More →</a>
-                </div>
-
-            </article>
-
-
-            <article class="post-card">
-
-                <img
-                    src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80"
-                    alt="Microphone">
-
-                <div class="post-content">
-                    <span class="category">MUSIC HISTORY</span>
-
-                    <h3>How Music Became Digital</h3>
-
-                    <p>
-                        From CDs to streaming, the way we
-                        listen to music has changed dramatically.
-                    </p>
-
-                    <a href="#">Read More →</a>
-                </div>
-
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <!-- Footer -->
-    <footer>
-        <h2>SONORA</h2>
-        <p>Discover music. Find your sound.</p>
-        <p>© 2026 SONORA Music Blog</p>
-    </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
