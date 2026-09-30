@@ -271,3 +271,36 @@ footer h2 {
     }
 
 }
+/* Reviews Page */
+
+.page-header {
+    padding: 100px 7%;
+    background-color: #111;
+    color: white;
+}
+
+.page-header h1 {
+    font-size: 56px;
+    margin: 10px 0 15px;
+}
+
+.page-header p:last-child {
+    max-width: 600px;
+    color: #ccc;
+}
+
+.reviews-section {
+    padding: 80px 7%;
+}
+
+.artist-name {
+    font-weight: bold;
+    color: #777;
+    margin-bottom: 12px;
+}
+
+.rating {
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-top: 15px;
+}
